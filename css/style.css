@@ -1,0 +1,145 @@
+/* css for embedding fonts starts */
+@font-face {
+  font-family: 'Noticia Text-Bold';
+  src: url(../vendor/fonts/NoticiaText-Bold.woff);
+}
+@font-face {
+  font-family: 'WorkSans-medium';
+  src: url(../vendor/fonts/WorkSans-Medium.woff);
+}
+@font-face {
+  font-family: 'WorkSans-regular';
+  src: url(../vendor/fonts/WorkSans-Regular.woff);
+}
+@font-face {
+  font-family: 'WorkSans-bold';
+  src: url(../vendor/fonts/WorkSans-SemiBold.woff);
+}
+/* css for embedding fonts ends */
+
+/* general css starts here */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1240px;
+  margin:0 auto;
+}
+/* general css ends here */
+/* header section css */
+/* guidelines section css starts */
+.guidelines{
+  background-color:#C8F169;
+  position:relative;
+}
+.guideline{
+  color:#2A6B2C;
+}
+.guideline p{
+  padding:12px;
+  font-family: 'WorkSans-regular';
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.guideline i{
+  position:absolute;
+  top:12px;
+  right:30px;
+  font-size: 20px;
+}
+.guideline a{
+  color:#2A6B2C;
+  font-family: 'WorkSans-bold';
+}
+/* guidelines section ends here */
+/* header section ends here */
+/* main section css starts here */
+body{
+  background-color: #043F2E;
+}
+main{
+  font-family:'WorkSans-regular';
+}
+/* navigation section css starts here */
+.navigation_wrapper{
+  background-color: #ffffff;
+  border-radius: 0 0 20px 20px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav{
+  display: flex;
+  gap:20px;
+}
+/* buttons */
+.navigation_wrapper button{
+  text-decoration: none;
+  background: transparent;
+  color:#2A6B2C;
+  font-size: 16px;
+  padding:12px 24px;
+  border:2px solid #2A6B2C;
+  border-radius: 4px;
+  margin-right: 16px;
+  cursor:pointer;
+}
+/* buttons on hover */
+.navigation_wrapper button:hover{
+  color:#C8F169;
+  border:2px solid transparent;
+  background-color: #2A6B2C;
+}
+nav a{
+  text-decoration: none;
+  color:#2A6B2C;
+  font-family: 'WorkSans-medium';
+}
+/* navigation section ends here */
+/* home section starts here */
+.business_intelligence{
+  display:grid;
+  grid-template-columns: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 0.5fr 0.5fr 30px 1fr 30px 1fr 30px 0.4fr 0.4fr 0.2fr 30px 1fr 30px 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
+  justify-items: center;
+}
+h2{padding: 8px 15px;
+  color:#043F2E;
+  font-family:'Noticia Text-Bold';
+  font-size: 86px;
+  width: max-content;
+}
+.first_row{
+  grid-column: 1/19;
+  background-color: #C8F169;
+}
+.image{
+  position: relative;
+  z-index: 0;
+  background-color: #C8F169;
+}
+.second_row{
+  position: relative;
+  grid-row: 2/3;
+  background-color: #C8F169;
+  z-index: 1;
+}
+.third_row{
+  background-color: #C8F169;
+}
+.fourth_row{
+  background-color: #C8F169;
+}
+.table_graph{
+  grid-column: 20/29;
+  grid-row:span 2;
+  color:#C8F169;
+  padding:30px 16px;
+  font-family: 'WorkSans-medium';
+  background-color: #2A6B2C;
+  border-radius: 20px;
+} 
